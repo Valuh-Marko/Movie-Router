@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# MOVIE ROUTER - MARKO VALUH - FRONT END
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About this application
 
-## Available Scripts
+This application is a showcase of a movie database API, it displays the latest movies, their current rating and much more. This app was used to learn react and styled components, along with working with API's.
+**This is still in the development stage**.
 
-In the project directory, you can run:
+## Steps to reproduce to start the TODO App
 
-### `npm start`
+- In the console or the integrated terminal within the directory of the project run the following commands:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_Use this to install all the dependecies_
 
-### `npm test`
+In the _src_ folder, create a **.env**, and add
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+REACT_APP_API_KEY=[api-key]
+```
 
-### `npm run build`
+Replace **api-key** with your API key from the database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_This will start the development server._
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## App workflow
 
-### `npm run eject`
+- On the landing page, the most watch movie will be displayed up front, according to the database
+- You can click on any individual movie to bring it to focus, switching to page to it's specific route
+- You can search for any movie that you want in the search tab
+- If you want to see more, just load more! :D
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tech decisions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ReactJS](https://reactjs.org/)
+- [Prop-Types](https://www.npmjs.com/package/prop-types/)
+- [React Router](https://reactrouter.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- All of the components are structurized in the **components** folder
+- The **hooks** folder holds all of our custom hooks
+- _placeholder_ images and _svg_'s are in the images folder
+- **GlobalStyle.js** is the main theme, basic styles are located there
+- **helpers.js** is the holder for our helper functions
+- **API.js** has all the API call operations
+- **config.js** contains all the URLs used in the **API.js**
 
-## Learn More
+## Points of improvement
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add the login sistem and allow the user to rank the movies
