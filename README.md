@@ -2,8 +2,7 @@
 
 ## About this application
 
-This application is a showcase of a movie database API, it displays the latest movies, their current rating and much more. This app was used to learn react and styled components, along with working with API's.
-**This is still in the development stage**.
+This application is a showcase of a movie database API, it displays the latest movies, their current rating and much more. This app was used to learn react and styled components, along with working with API's.  
 
 ## Steps to reproduce to start the TODO App
 
